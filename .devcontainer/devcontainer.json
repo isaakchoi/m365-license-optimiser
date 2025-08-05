@@ -1,0 +1,79 @@
+// For options see: https://containers.dev/implementors/json_reference/
+
+{
+    // Name of the container
+    "name": "m356-license-optimiser-devcontainer",
+
+    // Run on host machine before container is created
+    "initializeCommand": "",
+
+    // Run after container is built
+    "postCreateCommand": "",
+
+    // Build devcontainer from source file
+    // Look at using a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "build": {
+
+        // Build using the file 'Dockerfile'
+        "dockerfile": "Dockerfile",
+
+        // Set the build context to the root of the file system to allow copying any files
+        "context": "/",
+
+        // Args to pass to the build
+        "args": {
+			"HOST_WORKSPACE_PATH": "${localWorkspaceFolder}", // The path to the workspace folder on the host machine
+            "REMOTE_WORKSPACE_PATH": "${containerWorkspaceFolder}" // The path to the workspace folder within the container
+        }
+    },
+
+    // Mount repo to devcontainer
+    "mounts": [
+    ],
+
+    // Customisations
+    "customizations": {
+
+        // VS Code extensions that will be automatically installed on devcontainer start
+        "vscode": {
+            "extensions": [ // To fix extensions not working see https://stackoverflow.com/questions/69513649/visual-studio-code-extensions-stopped-working-suddenly
+                "visualstudioexptteam.vscodeintellicode",   // [IntelliCode]
+                "eamodio.gitlens",                          // [GitLens — Git supercharged] Gitlense tools such as git blame and hovering
+
+                "ms-python.python",                         // [Python]
+                "ms-python.debugpy",                        // [Python Debugger]
+                "ms-python.vscode-pylance",                 // [Pylance]
+
+                "editorconfig.editorconfig",                // [EditorConfig for VS Code]
+
+                "hediet.vscode-drawio",                     // [Draw.io Integration] Preview and edit draw.io dragrams in vscode
+                "redhat.vscode-yaml",                       // [YAML] YAML syntax support
+                "tamasfe.even-better-toml",                 // [Even Better TOML] TOML syntax support
+                "mechatroner.rainbow-csv",                  // [Rainbow CSV] CSV syntax support
+                "bierner.markdown-mermaid",                 // [Markdown Preview Mermaid Support] Markdown preview and syntax support
+                "tomoki1207.pdf",                           // [vscode-pdf] Preview PDFs
+
+                "ms-azuretools.vscode-docker"               // [Docker] Official Docker extension. Used for syntax highlighting + more
+            ]
+        }
+    },
+
+    // Container runs this command after starting (run time not compile time)
+    "postStartCommand": ". ${containerWorkspaceFolder}/.devcontainer/app/on-start.sh",
+
+    // Pass env variables to the container. See: https://github.com/devcontainers/spec/issues/233
+    "containerEnv": {
+    },
+    "remoteEnv": {
+    },
+
+    // Ports that will be automatically forwarded from the devcontainer through the host machine
+    "forwardPorts": [],
+
+    // Connect as root. More info: https://aka.ms/dev-containers-non-root.
+    "remoteUser": "vscode", // Or "root" to run as root user
+
+    // Pass args when calling docker build
+    // "--privileged" - Run container as priveledged user. Allows running docker daemon within container for composer-local-dev
+    "runArgs": []
+}
