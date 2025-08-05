@@ -117,8 +117,6 @@ def main():
     result = response["choices"][0]["message"]["content"]
 
     print(result)
-    print()
-    print(response)
 
 
 # ==================== [ RUN ] ==================== #
