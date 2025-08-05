@@ -1,0 +1,87 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.7">
+  <diagram name="Page-1" id="jkyWEsUThgF6aey1WfAn">
+    <mxGraphModel dx="1454" dy="990" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-21" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="407.71" y="353" width="533.58" height="398" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tkoUn3kZjdcvx1pm9AA_-2" target="tkoUn3kZjdcvx1pm9AA_-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-2" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="508" y="400" width="337" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkoUn3kZjdcvx1pm9AA_-1" target="tkoUn3kZjdcvx1pm9AA_-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-1" value="Clients input list of identities with attached licenses" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="132" y="446.88" width="117" height="146.25" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-3" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.061;entryY=0.253;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tkoUn3kZjdcvx1pm9AA_-5" target="tkoUn3kZjdcvx1pm9AA_-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-4" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" edge="1" parent="1" source="tkoUn3kZjdcvx1pm9AA_-5" target="tkoUn3kZjdcvx1pm9AA_-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-5" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="542" y="467" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-6" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="654" y="430" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkoUn3kZjdcvx1pm9AA_-8" target="tkoUn3kZjdcvx1pm9AA_-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-8" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="654" y="496" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-9" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" edge="1" parent="1" source="tkoUn3kZjdcvx1pm9AA_-11" target="tkoUn3kZjdcvx1pm9AA_-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-10" style="edgeStyle=entityRelationEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" edge="1" parent="1" source="tkoUn3kZjdcvx1pm9AA_-11" target="tkoUn3kZjdcvx1pm9AA_-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-11" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="544" y="570" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-12" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="766" y="496" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-13" value="Represent licenses as a DAG&lt;div&gt;- Intrinsic representation.&lt;br&gt;&lt;div&gt;- Easily identify redundant licenses and overlap.&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- The licenses DAG will be small, allowing for optimised in-memory calculations.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="479" y="649" width="393.5" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-14" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="654" y="570" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tkoUn3kZjdcvx1pm9AA_-15" target="tkoUn3kZjdcvx1pm9AA_-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-15" value="Licenses and mappings" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="623" y="198" width="107" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-19" value="Results&lt;div&gt;(overlapping licenses)&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="1062" y="446.88" width="117" height="146.25" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-22" value="&lt;div&gt;Azure Cloud Function&lt;/div&gt;- Python script contains the logic.&lt;div&gt;- Cheap, scalable, modular, deterministic.&lt;/div&gt;&lt;div&gt;- This works because the datasets will be small (KB to a few MB)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="478.75" y="756" width="393.5" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tkoUn3kZjdcvx1pm9AA_-24" target="tkoUn3kZjdcvx1pm9AA_-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-24" value="Process to maintain an up to date list of licenses and metadata" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="553.38" y="42" width="246.25" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="tkoUn3kZjdcvx1pm9AA_-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="898" y="90" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tkoUn3kZjdcvx1pm9AA_-29" value="&lt;span style=&quot;font-style: italic;&quot;&gt;Potentially leverage GenAI here&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;font-style: italic;&quot;&gt;with some human in the loop to&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-style: italic;&quot;&gt;create a curated source of truth if needed.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="896" y="51.5" width="209" height="77" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
