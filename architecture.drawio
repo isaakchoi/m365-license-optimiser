@@ -1,13 +1,13 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="jkyWEsUThgF6aey1WfAn">
-        <mxGraphModel dx="1586" dy="1249" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="888" dy="699" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="11" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="10">
+                <mxCell id="11" style="edgeStyle=none;html=1;" parent="1" source="5" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+                <mxCell id="5" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
                     <mxGeometry x="508" y="1149" width="320" height="172" as="geometry"/>
                 </mxCell>
                 <mxCell id="tkoUn3kZjdcvx1pm9AA_-21" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
@@ -90,35 +90,38 @@
                 <mxCell id="3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;FUTURE&lt;/h1&gt;&lt;p&gt;- AI chatbot to assist with generating templates for specific roles. This may justify why a license is/isn&#39;t needed for a given role based off a job description.&lt;/p&gt;&lt;p&gt;- Cost breakdown&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="1313" y="439.5" width="381" height="154" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" style="edgeStyle=none;html=1;endArrow=classic;endFill=1;" edge="1" parent="1">
+                <mxCell id="13" style="edgeStyle=none;html=1;endArrow=classic;endFill=1;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="657.91" y="1192.5" as="sourcePoint"/>
                         <mxPoint x="657.91" y="989" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="4" value="&lt;div&gt;Python Script&lt;/div&gt;&lt;div&gt;Batch data to create context and query for Azure OpenAI LLM instance.&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                <mxCell id="4" value="&lt;div&gt;Python Script&lt;/div&gt;&lt;div&gt;Batch data to create context and query for Azure OpenAI LLM instance.&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
                     <mxGeometry x="564.5" y="1192.5" width="207" height="85" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="&lt;div&gt;Azure Cloud Function&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
+                <mxCell id="6" value="&lt;div&gt;Azure Cloud Function&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="1" vertex="1">
                     <mxGeometry x="468.5" y="1329.5" width="393.5" height="79" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8" target="5">
+                <mxCell id="9" style="edgeStyle=none;html=1;" parent="1" source="8" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Structured data of which users have what licenses, how many licenses are available/unused, etc." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+                <mxCell id="8" value="Structured data of which users have what licenses, how many licenses are available/unused, etc." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
                     <mxGeometry x="296" y="1155" width="122" height="151.25" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="Redundant&lt;div&gt;Licenses Report&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+                <mxCell id="10" value="Redundant&lt;div&gt;Licenses Report&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
                     <mxGeometry x="916" y="1163.75" width="114" height="142.5" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="Azure OpenAI Instance" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                <mxCell id="12" value="Azure OpenAI Instance" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
                     <mxGeometry x="608" y="929" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;" edge="1" parent="1">
+                <mxCell id="14" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="671.91" y="1192.5" as="sourcePoint"/>
                         <mxPoint x="671.91" y="989" as="targetPoint"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;FUTURE&lt;/h1&gt;&lt;p&gt;- AI chatbot to assist with generating templates for specific roles. This may justify why a license is/isn&#39;t needed for a given role based off a job description.&lt;/p&gt;&lt;p&gt;- Cost breakdown and minimisation.&lt;/p&gt;&lt;p&gt;- AI Agent to scrape official microsoft websites to catalogue licenses?&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1313" y="1158" width="381" height="154" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
