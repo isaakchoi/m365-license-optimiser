@@ -1,0 +1,477 @@
+05/08/2025,Office 365,,,Microsoft 365 Business,,,Microsoft 365 Frontline,,,,,Microsoft 365 Enterprise,,,,Microsoft 365 Education,,,,,
+Feature,E1,E3,E5,Basic,Standard,Premium,F1,F3,F5 Security,F5 Compliance,F5 Sec+Comp,E3,E5 Security,E5 Compliance,E5,A1 (Legacy),A1 for Devices,A3,A5 Security,A5 Compliance,A5
+Office 365,E1,E3,E5,,,,,F3,,,,E3,,,E5,A1,A1+,A3,,,A5
+Activity Reports,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Adoption Score,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Alert Policies,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Audit (premium),,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Audit (standard),✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Basic Mobility & Security,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Bookings,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+Communication Compliance,,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Compliance Manager,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Conditional Access for Sites,,,✔,,,,,,,,,,,✔,✔,,,,,✔,✔
+Content Search,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Copilot Studio for Teams,✔,✔,✔,✔,✔,✔,,✔,,,,✔,,,✔,,,✔,,,✔
+Customer Key,,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Customer Lockbox,,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Data Lifecycle Management,,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Data Loss Prevention,,✔,✔,,,✔,,,,✔,✔,✔,,,✔,✔,✔,✔,,,✔
+Dataverse for Teams,✔,✔,✔,✔,✔,✔,,✔,,,,✔,,,✔,,,✔,,,✔
+Defender for Office 365 Plan 2,,,✔,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Attack Simulation Training,,,✔,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Automated Investigation & Response,,,✔,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Campaign Views,,,✔,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Compromised User Detection,,,✔,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Teams Message Entity Panel,,,✔,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Teams Message Quarantine,,,✔,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Threat Explorer,,,✔,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Threat Trackers,,,✔,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Defender for Office 365 Plan 1,,,✔,,,✔,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > > Advanced Anti-Phishing,,,✔,,,✔,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > > Real-Time Reports,,,✔,,,✔,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > > Safe Attachments,,,✔,,,✔,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > > Safe Links,,,✔,,,✔,,,✔,,✔,,✔,,✔,,,,✔,,✔
+Double Key Encryption,,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+eDiscovery (premium),,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+eDiscovery (standard),,✔,✔,,,✔,,,,✔,✔,✔,,,✔,,,✔,,,✔
+Education Insights,,,,,,,,,,,,,,,,✔,✔,✔,,,✔
+Exact Data Match,,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Exchange Online,Plan 1(50 GB),Plan 2(100 GB),Plan 2(100 GB),Plan 1(50 GB),Plan 1(50 GB),Plan 1(50 GB),Calendar only,Kiosk(2 GB),,,,Plan 2(100 GB),,,Plan 2(100 GB),Plan 1+(50 GB),Plan 1+(50 GB),Plan 2(100 GB),,,Plan 2(100 GB)
+Exchange Online Archiving,50 GB,1.5 TB,1.5 TB,50 GB,50 GB,1.5 TB,,,,1.5 TB,1.5 TB,1.5 TB,,,1.5 TB,1.5 TB,1.5 TB,1.5 TB,,,1.5 TB
+Exchange Online Protection,✔,✔,✔,✔,✔,✔,,✔,✔,,✔,✔,✔,,✔,✔,✔,✔,✔,,✔
+Graph Connector Capacity,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+InfoPath App,,✔,✔,,,,,,,,,✔,,,✔,,,,,,
+Information Barriers,,,✔,,,,,,,✔,✔,,,✔,✔,✔,✔,✔,,,✔
+Information Protection for M365,,✔,✔,,,✔,From EMS E3,From EMS E3,,✔,✔,✔,,,✔,✔,✔,✔,,,✔
+Message Encryption (advanced),,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Message Encryption (basic),,✔,✔,,,✔,From EMS E3,From EMS E3,,,,✔,,,✔,✔,✔,✔,,,✔
+Microsoft 365 Apps,,Enterprise,Enterprise,,Business(No SCA),Business(With SCA),,,,,,Enterprise,,,Enterprise,,Education,Education,,,Education
+Microsoft 365 Copilot Chat,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Microsoft 365 Mobile App,✔,✔,✔,✔,✔,✔,Read only,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Microsoft Forms,✔,✔,✔,✔,✔,✔,Consume only,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Microsoft Lists,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Microsoft Places (core),✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Microsoft Search,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Microsoft Teams,,,,Optional,Optional,Optional,Optional,Optional,,,,,,,,Education,Education,Education,,,Education
+Microsoft To Do,✔,✔,✔,✔,✔,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Microsoft Whiteboard,✔,✔,✔,✔,✔,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Office 365 Cloud App Security,,,✔,,,,,,,,,,,,✔,,,✔,,,✔
+Office for the Web,✔,✔,✔,✔,✔,✔,Read only,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+OneDrive for Business,Plan 1(1 TB),Plan 2(1 TB+),Plan 2(1 TB+),Plan 1(1 TB),Plan 1(1 TB),Plan 1(1 TB),Kiosk(2 GB),Kiosk(2 GB),,,,Plan 2(1 TB+),,,Plan 2(1 TB+),Plan 1(100 GB),Plan 1(100 GB),Plan 2(1 TB+),,,Plan 2(1 TB+)
+OneNote Class Notebook,,,,,,,,,,,,,,,,✔,✔,✔,,,✔
+Planner for Office 365,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+PLC Groups,,,,,,,,,,,,,,,,✔,✔,✔,,,✔
+Power Apps for Office 365,✔,✔,✔,✔,✔,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Power Automate for Office 365,✔,✔,✔,✔,✔,✔,,"2,000 steps/day",,,,✔,,,✔,✔,✔,✔,,,✔
+Power BI Pro,,,✔,,,,,,,,,,,,✔,,,,,,✔
+Privileged Access Management,,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Productivity Server CAL,✔,✔,✔,,,,,,,,,✔,,,✔,,,✔,,,✔
+Project & Roadmap View Access,✔,✔,✔,✔,✔,✔,,✔,,,,✔,,,✔,,,,,,
+Records Management,,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Retention Labels,,✔,✔,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Retention Policies,,✔,✔,,,✔,,,,✔,✔,✔,,,✔,✔,✔,✔,,,✔
+Rules-Based Classification (Office 365),,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+School Data Sync,,,,,,,,,,,,,,,,✔,✔,✔,,,✔
+Secure Score,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+SharePoint Online,Plan 1,Plan 2,Plan 2,Plan 1,Plan 1,Plan 1,Kiosk,Kiosk,,,,Plan 2,,,Plan 2,Plan 1+,Plan 1+,Plan 2,,,Plan 2
+Skype for Business Plus CAL,,,✔,,,,,,,,,,,,✔,,,,,,✔
+Stream for Office 365,✔,✔,✔,✔,✔,✔,Consume only,Consume only,,,,✔,,,✔,✔,✔,✔,,,✔
+Sway,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Teams Audio Conferencing (full),,,✔,,,,,,,,,,,,✔,,,,,,✔
+Teams Data Loss Prevention,,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Teams DLP & Export Graph API,,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Teams Live Events,✔,✔,✔,,,,,,,,,✔,,,✔,,,✔,,,✔
+Teams Phone,,,✔,,,,,,,,,,,,✔,,,,,,✔
+Teams Town Halls,✔,✔,✔,,,,,,,,,✔,,,✔,,,✔,,,✔
+Teams Webinars,,✔,✔,,✔,✔,,,,,,✔,,,✔,,,✔,,,✔
+Visio for the Web,✔,✔,✔,✔,✔,✔,Read only,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Viva Connections,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Viva Engage,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Viva Insights - Personal,Basic,Basic,Premium,Basic,Basic,Basic,,,,,,Basic,,,Premium,,,Basic,,,Premium
+Viva Learning (basic),✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,,,,,,
+3x Premium & Custom Compliance Templates,,,✔,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Enterprise Mobility + Security,,,,,,,E3,E3,,,,E3,,,E5,,,A3,,,A5
+Active Directory RMS,,,,,,,✔,✔,,,,✔,,,✔,,,✔,,,✔
+Advanced Threat Analytics (retiring),,,,,,,✔,✔,,,,✔,,,✔,,,✔,,,✔
+App Governance,,,,,,,,,✔,✔,✔,,✔,✔,✔,,,,✔,✔,✔
+Azure RMS,,,,,,,✔,✔,,,,✔,,,✔,,,✔,,,✔
+Config Manager Endpoint Protection,,,,,,,✔,✔,,,,✔,,,✔,,,✔,,,✔
+Defender for Cloud Apps,,,,,,,,,✔,✔,✔,,✔,✔,✔,,,,✔,✔,✔
+Defender for Identity,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+Entra ID Plan 2,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Access Reviews,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Entitlement Management (basic),,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Entra ID Protection,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > MFA Registration Policy,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Privileged Identity Management,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Risk-Based Conditional Access,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Entra ID Plan 1,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > Administrative Units,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+" > > App Proxy, including PingAccess",,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > Cloud App Discovery,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > Conditional Access,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > Custom Security Attributes,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > Entra ID Connect Health,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > External ID,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > Microsoft Identity Manager,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > Password Protection,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > Self-Service Group Management,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > Service Level Agreement,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > Shared Account Password Roll-Over,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > SMS Sign-In,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > Terms of Use,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > 3rd Party MFA Integration,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > > Entra ID for Education,,,,,,,,,,,,,,,,✔,✔,✔,,,✔
+ > > > Advanced Security Reports & Alerts,,,,,,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > Dynamic Groups,,,,,,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > Enterprise State Roaming,,,,,,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > Self-Service Password Reset in AD,,,,,,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > Windows Autopilot,,,,,,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > Entra ID for Office 365,✔,✔,✔,,,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > > Customized Sign-In Page,✔,✔,✔,,,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > > Self-Service Activity Reports,✔,✔,✔,,,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > > Entra ID Free,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > > > Basic Security & Usage Reports,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > > > Multi-Factor Auth (MFA),✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > > > Passwordless Authentication,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > > > Single-Sign-On to other SaaS,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > > > Temporary Access Pass,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > > > > Verified ID,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Information Protection,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+Intune Plan 1,,,,,,Business,✔,✔,,,,✔,,,✔,Education,Education,Education,,,Education
+ > Application Management,,,,,,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > Config Manager,,,,,,--,✔,✔,,,,✔,,,✔,,,✔,,,✔
+ > Device Management,,,,,,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > Endpoint Analytics,,,,,,✔,✔,✔,,,,✔,,,✔,,,✔,,,✔
+Rules-Based Classification (Client & Scanner),,,,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Windows Server CAL Rights,,,,,,,✔,✔,,,,✔,,,✔,,,✔,,,✔
+Windows,,,,,,Business,,F3,,,,E3,,,E5,Pro upgrade,Pro upgrade,A3,,,A5
+Always On VPN,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+Application Control,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+AppLocker,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+App Assure,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+Assigned Access,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Attack Surface Reduction,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+BitLocker,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+BitLocker to Go,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+BranchCache,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+Copilot in Windows,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Custom Logon,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+Custom Shell,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+Credential Guard,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+Defender Antivirus,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Defender for Endpoint Plan 2,,,,,,Business,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Advanced Hunting,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Automated Investigations,,,,,,✔,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Defender for Cloud Apps Integration,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Endpoint Attack Notifications (suspended),,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Endpoint Detection & Response,,,,,,✔,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Evaluation Lab,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Threat Analytics,,,,,,✔,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > 6-Months Searchable Data,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Defender Vulnerability Management (core),,,,,,✔,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > > Configuration Assessment,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Continuous Monitoring,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Device Discovery,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Device Inventory,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Remediation Tracking,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Risk Based Prioritization,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Software Inventory,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Software Usage Insights,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Vulnerability Assessment,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > Defender for Endpoint Plan 1,,,,,,Business,,,✔,,✔,✔,✔,,✔,,,✔,✔,,✔
+ > > Attack Surface Reduction (enhanced),,,,,,✔,,,✔,,✔,✔,✔,,✔,,,✔,✔,,✔
+ > > Block at First Sight,,,,,,✔,,,✔,,✔,✔,✔,,✔,,,✔,✔,,✔
+ > > Centralized Management,,,,,,,,,✔,,✔,✔,✔,,✔,,,✔,✔,,✔
+ > > Cross-Platform Support,,,,,,✔,,,✔,,✔,✔,✔,,✔,,,✔,✔,,✔
+ > > Manual Response Actions,,,,,,,,,✔,,✔,✔,✔,,✔,,,✔,✔,,✔
+ > > Mobile Threat Defence,,,,,,✔,,,✔,,✔,✔,✔,,✔,,,✔,✔,,✔
+ > > Next Gen Protection,,,,,,✔,,,✔,,✔,✔,✔,,✔,,,✔,✔,,✔
+ > > Tamper Protection,,,,,,✔,,,✔,,✔,✔,✔,,✔,,,✔,✔,,✔
+ > > Web Content Filtering,,,,,,✔,,,✔,,✔,✔,✔,,✔,,,✔,✔,,✔
+Device Guard,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+DirectAccess (deprecated),,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+Domain Join,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Edge for Business,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Entra ID Join,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Keyboard Filter,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+LAPS,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Long Term Servicing Channel,,,,,,,,--,,,,✔,,,✔,,,✔,,,✔
+Manage by MDM,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+MDOP (retiring),,,,,,,,--,,,,✔,,,✔,,,✔,,,✔
+Persistent Memory,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+Power Automate Attended Desktop Flows,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+Resilient File System (ReFS),,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+SMB Direct,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+Unbranded Boot,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Unified Write Filter,,,,,,,,✔,,,,✔,,,✔,,,✔,,,✔
+Universal Print,,,,,,✔,,✔,,,,✔,,,✔,~,~,✔,,,✔
+Windows Autopatch,,,,,,✔,,✔,,,,✔,,,✔,,,✔,,,✔
+Windows Conditional Access,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Windows Firewall,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Windows Hello for Business,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Windows Update for Business,,,,,,✔,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Windows Virtualization Rights,,,,,,,,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Windows 11 Support Period,,,,,,24 months,,36 months,,,,36 months,,,36 months,24 months,24 months,36 months,,,36 months
+Suite Value,,,,,,,,,,,,,,,,,,,,,
+Clipchamp Standard,,,,,✔,✔,,,,,,✔,,,✔,,,,,,
+Defender for IoT - eIoT (5 devices),,,,,,,,,,,,,✔,,✔,,,,,,
+Endpoint DLP,,,,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+FastTrack,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,,✔,✔,✔,✔,✔
+Insider Risk Management,,,,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Loop Workspaces,,,,,✔,✔,,,,,,✔,,,✔,,,✔,,,✔
+Minecraft Education Edition,,,,,,,,,,,,,,,,,✔,✔,,,✔
+Office Professional Plus,,,,,,,,,,,,✔,,,✔,,,,,,
+Office Servers,,,,,,,,,,,,✔,,,✔,,,✔,,,✔
+Remote Help,,,,,,,,,,,,,,,,✔,✔,✔,,,✔
+Safe Documents,,,,,,,,,,,,,✔,,✔,,,,✔,,✔
+Sentinel Benefit,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+Student Use Benefits,,,,,,,,,,,,,,,,,,✔,✔,,✔
+Trainable Classifiers,,,,,,,,,,✔,✔,,,✔,✔,,,,,✔,✔
+Related Services,,,,,,,,,,,,,,,,,,,,,
+Security & Compliance,,,,,,,,,,,,,,,,,,,,,
+10-Year Audit Log Retention,,,+,,,,,,,,,,,+,+,,,,,+,+
+AccountGuard,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+Advanced Data Residency,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+Azure Automation,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Azure Backup,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Azure Bastion,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Azure Log Analytics,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Azure RBAC,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Azure Update Manager,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Compliance Premium Assessments,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+Cross-Tenant Migration,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+Defender CSPM,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Defender EASM,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Defender for Business,,,,+,+,✔,,,,,,,,,,,,,,,
+Defender for Business Servers,,,,,,+,,,,,,,,,,,,,,,
+Defender for Cloud,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Defender for Servers,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Defender Threat Intelligence,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Defender Threat Intelligence API,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Defender Vulnerability Management (premium),,,,,,+,,,+,,+,,+,,+,,,,+,,+
+ > Authenticated Scan For Windows,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Block Vulnerable Applications,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Browser Extensions Assessment,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Digital Certificate Assessment,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Hardware & Firmware Assessment,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Network Share Analysis,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Security Baselines Assessment,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Defender Vulnerability Management (core),,,,,,✔,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > > Configuration Assessment,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Continuous Monitoring,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Device Discovery,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Device Inventory,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Remediation Tracking,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Risk Based Prioritization,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Software Inventory,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Software Usage Insights,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+ > > Vulnerability Assessment,,,,,,✔,,,✔,,✔,,✔,,✔,,,,,,
+Insider Risk Management Forensic Evidence,,,,,,,,,,,,,,+,+,,,,,,
+Intune Suite,,,,,,+,+,+,,,,+,,,+,,,+,,,+
+ > Enterprise App Management,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > Advanced Analytics,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > Cloud PKI,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > Endpoint Privilege Management,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > Remote Help,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > Intune Plan 2,,,,,,+,+,+,,,,+,,,+,,,+,,,+
+ > > Firmware Over-the-Air Updates,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > Specialty Device Management,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > Tunnel for MAM,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+Microsoft 365 Archive,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Microsoft 365 Backup,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Microsoft 365 E5 Compliance,,,,,,,,,,✔,✔,+,,✔,✔,,,+,,✔,✔
+Microsoft 365 E5 Security,,,,,,+,,,✔,,✔,+,✔,,✔,,,+,✔,,✔
+Microsoft 365 Lighthouse,,,,,,+,,,,,,+,,,+,,,,,,
+Microsoft Sentinel,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Microsoft Tunnel,,,,,,+,+,+,,,,+,,,+,+,+,+,,,+
+Multi-Geo,+,+,+,,,,+,+,,,,+,,,+,,,,,,
+Security Copilot,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+SharePoint Advanced Management Plan 1,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > Conditional Access for Sites,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Enterprise App Insight Reports,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Site Ownership Policy,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > SharePoint Advanced Management for Copilot,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Advanced Tenant Rename,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > AI Insights,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Block Download Policy,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Data Access Governance Reports,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Data Access Governance Reports PowerShell,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Inactive Sites Policy,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Recent Site Actions,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Restricted Access Control for OneDrive,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Restricted Access Control for SharePoint,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Restricted Content Discovery,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Site Access Review,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Site Change History Reports,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+Microsoft Entra,,,,,,,,,,,,,,,,,,,,,
+Entra Domain Services,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Entra External ID,Δ,Δ,Δ,Δ,Δ,✔,✔,✔,Δ,Δ,Δ,✔,Δ,Δ,✔,Δ,Δ,✔,Δ,Δ,✔
+Entra ID,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔,✔
+Entra Suite add-on to Entra ID Plan 1,,,,,,+,+,+,,,,+,,,,,,+,,,
+ > Entra ID Protection,,,,,,,,,✔,,✔,,✔,,✔,,,,✔,,✔
+ > Entra Suite add-on to Entra ID Plan 2,,,,,,,,,+,,+,,+,,+,,,,+,,+
+ > > Entra Internet Access,,,,,,+,+,+,,,,+,,,+,,,+,,,+
+ > > Entra Private Access,,,,,,+,+,+,,,,+,,,+,,,+,,,+
+ > > Entra ID Governance,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+ > > > Entitlement Management (premium),⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > > Identity Governance Dashboard,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > > Lifecycle Workflows,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > > ML Assisted Access Reviews,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > Entra Verified ID Premium,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+ > > > Face Check,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+Entra Permissions Management (retiring),,,,,,,,,,,,,,,,,,,,,
+Entra Verified ID,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Entra Workload ID Premium,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+ > Access Reviews,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Entra ID Protection,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Risk-Based Conditional Access,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Entra Workload ID Free,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+ > > Basic Security & Usage Reports,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > Identity Federation,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+Microsoft Priva,,,,,,,,,,,,,,,,,,,,,
+Privacy Risk Management,+,+,+,,,,,,,,,+,,,+,+,+,+,,,+
+Subject Rights Requests,+,+,+,,,,,,,,,+,,,+,+,+,+,,,+
+Microsoft Purview,,,,,,,,,,,,,,,,,,,,,
+Data Catalog,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Data Estate Insights,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Data Map,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Data Policy,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Microsoft Security Experts,,,,,,,,,,,,,,,,,,,,,
+Defender Experts for Hunting,,,,,,,,,+,,+,,+,,+,,,,+,,+
+Defender Experts for XDR,,,,,,,,,+,,+,,+,,+,,,,+,,+
+Communications,,,,,,,,,,,,,,,,,,,,,
+Azure Comm. Services,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Calling Plans,,,+,,,,,,,,,,,,+,,,,,,+
+Comms. Credits,,,+,,,,,,,,,,,,+,,,,,,+
+Digital Contact Centre,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+EHR Connector for Teams,+,+,+,+,+,+,+,+,,,,+,,,+,,,,,,
+Teams Audio Conferencing (free add-on),Δ,Δ,✔,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,✔,Δ,Δ,Δ,Δ,Δ,✔
+Teams Enterprise,+,+,+,,,,+,+,,,,+,,,+,,,,,,
+Teams Essentials,,,,+,+,+,,,,,,,,,,,,,,,
+Teams Operator Connect,,,+,,,,,,,,,,,,+,,,,,,+
+Teams Phone Mobile,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Teams Premium,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > Advanced Collaboration Tools,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Advanced Meetings,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Advanced Meetings Protection,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Advanced Town Halls,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Advanced Virtual Appointments,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Advanced Webinars,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Immersive Mesh Experiences,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Intelligent Recap,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Live Caption Translation,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Microsoft eCDN,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > Microsoft Places (enhanced),⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > PowerPoint Live Chapters,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Queues App,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+Teams Rooms,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+Extra Capacity,,,,,,,,,,,,,,,,,,,,,
+AI Builder Capacity,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Dataverse Storage,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+SharePoint Storage,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+Universal Print Jobs,,,,,,+,,+,,,,+,,,+,+,+,+,,,+
+Support Services,,,,,,,,,,,,,,,,,,,,,
+ProDirect Support for Azure,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+ProDirect Support for Dynamics 365,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+ProDirect Support for Microsoft 365,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Unified Support,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Education,,,,,,,,,,,,,,,,,,,,,
+Azure Dev Tools for Teaching,,,,,,,,,,,,,,,,+,+,+,,,+
+Class Notebook,,,,,,,,,,,,,,,,,,+,,,+
+Employee Experience,,,,,,,,,,,,,,,,,,,,,
+LinkedIn Learning,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+Viva Suite,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > Copilot in Viva Learning (preview),⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Skills in Viva (preview),⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Viva Learning (premium),+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > Viva Workplace Analytics & Employee Feedback,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > > Copilot in Viva Glint,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > Viva Glint,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+" > > Viva Insights - Manager, Leader, Analyst",+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > > Viva Pulse,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > Viva Employee Communications & Communities,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > > Copilot in Viva Amplify,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > Copilot in Viva Engage,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > Answers in Viva,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > People in Viva,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > Viva Amplify,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > Viva Connections (50 instances),⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+ > > Viva Engage (premium),⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡
+Power Platform,,,,,,,,,,,,,,,,,,,,,
+AI Builder,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Copilot Studio,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Microsoft Dataverse,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Power Apps,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Power Automate,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Power Automate Process Mining,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Power BI Premium,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Power Pages,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Companion Products & Services,,,,,,,,,,,,,,,,,,,,,
+App Assure,,,,,,+,+,+,,,,+,,,+,,,+,,,+
+Azure Virtual Desktop,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Clipchamp Standard,Δ,Δ,Δ,Δ,✔,✔,Δ,Δ,Δ,Δ,Δ,✔,Δ,Δ,✔,Δ,Δ,Δ,Δ,Δ,Δ
+Drive Shipping for PST import,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Dynamics 365 Customer Voice,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Microsoft Industry Clouds,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Microsoft 365 Dev Program,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Planner & Project,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+SharePoint Embedded,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Visio Online,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+Windows 365 Business,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Windows 365 Enterprise,,,,,,+,,+,,,,+,,,+,,,+,,,+
+Windows 365 Frontline,,,,,,+,,+,,,,+,,,+,,,+,,,+
+Workplace Discount Program,,,,,,,,,,,,+,,,+,,,+,,,+
+Automation & Intelligence,,,,,,,,,,,,,,,,,,,,,
+Microsoft 365 Copilot,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+ > Copilot Actions,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot Chat (Work),⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot Dashboard,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in Excel,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in Forms,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in Loop,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in OneDrive,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in OneNote,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in Outlook,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in PowerPoint,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in Planner,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in SharePoint,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in Stream,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in Teams,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in Whiteboard,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot in Word,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Copilot Prompt Gallery,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Graph and Connector Access Included,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Intelligent Recap,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Intelligent Search,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Microsoft 365 Agents,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Microsoft Places (additional),⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > SharePoint Agents,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+" > Viva Insights - Manager, Leader, Analyst",⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Viva Pulse for Copilot,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > SharePoint Advanced Management for Copilot,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Advanced Tenant Rename,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > AI Insights,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Block Download Policy,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Data Access Governance Reports,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Data Access Governance Reports PowerShell,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Inactive Sites Policy,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Recent Site Actions,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Restricted Access Control for OneDrive,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Restricted Access Control for SharePoint,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Restricted Content Discovery,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Site Access Review,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > > Site Change History Reports,⊡,⊡,⊡,⊡,⊡,⊡,⊡,⊡,,,,⊡,,,⊡,⊡,⊡,⊡,,,⊡
+ > Microsoft 365 Copilot Chat,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > Copilot Chat (Web),✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > Copilot Code Interpreter,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > Copilot File Upload,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > Copilot Image Generator,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > Copilot Pages,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > Create Agents,✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > Graph Access in Agents (metered),✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+ > > Graph Connectors in Agents (metered),✔,✔,✔,✔,✔,✔,✔,✔,,,,✔,,,✔,✔,✔,✔,,,✔
+Microsoft 365 Copilot for Sales,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
+Microsoft 365 Unattended RPA,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ,Δ
+Microsoft Syntex,+,+,+,+,+,+,+,+,,,,+,,,+,+,+,+,,,+
