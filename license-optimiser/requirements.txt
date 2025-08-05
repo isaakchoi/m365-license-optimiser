@@ -1,0 +1,3 @@
+openai==1.98.0 # OpenAI connector
+environs==14.2.0 # Gracefully reading evironment variables from an env file
+azure-identity==1.23.1
