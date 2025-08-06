@@ -1,6 +1,7 @@
 import os
 import time
 import json
+from typing import Iterable
 
 import pandas as pd
 from environs import Env
@@ -30,12 +31,15 @@ LICENSE_MATRIX_FILE_PATH = "./input/license-matrix.csv"
 OUTPUT_FILE_PATH = "./output/report.md"
 
 
+BATCHED_QUERY_TEMPLATE_FILE_PATH = "./input/batched_query_template.jinja"
+
+
 # ==================== [ SETUP ] ==================== #
 
 # Allow use of relative paths
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-print(f"Set cwd to '{os.getcwd()}'.")
+print(f"Set working directory to '{os.getcwd()}'.")
 
 # Uses environment variables if they are set. Otherwise checks for the variable definition in the .env file. Throws error if variable is defined in neither.
 
@@ -47,8 +51,17 @@ env.read_env(path="./.env", recurse=False)
 endpoint = env.str("AZURE_OPENAI_ENDPOINT_URL")
 subscription_key = env.str("AZURE_OPENAI_API_KEY")
 
+# Preload Jinja templates
 
-# ==================== [ AZURE UTILITIES ] ==================== #
+print (f" Loading templates ...")
+
+with open(BATCHED_QUERY_TEMPLATE_FILE_PATH, "r") as f:
+    batched_query_template: Template = Template(f.read())
+
+with open(CONTEXT_TEMPLATE_FILE_PATH, "r") as f:
+    context_template: Template = Template(f.read())
+
+# ================================================================================
 
 def get_client() -> AzureOpenAI:
 
@@ -72,15 +85,38 @@ def query_azure_openai(client: AzureOpenAI, query):
         stream=False
     )
 
+# ================================================================================
 
-# ==================== [ DATA CONNECTION UTILITIES ] ==================== #
+class Prompt:
 
-def get_context_template() -> Template:
+    def _get_new_id(start=0):
+        while True:
+            yield start
+            start += 1
 
-    print(f"Reading context template from '{CONTEXT_TEMPLATE_FILE_PATH}'.")
+    _id_gen = _get_new_id()
 
-    with open(CONTEXT_TEMPLATE_FILE_PATH, "r") as f:
-        return Template(f.read())
+    def __init__(self, context: str, query: str):
+
+        self.id = next(Prompt._id_gen)
+
+        self.context = context
+        self.query = query
+
+    def as_azure_compatible(self):
+
+        return [
+            {
+                "role": "system",
+                "content": self.context
+            },
+            {
+                "role": "user",
+                "content": self.query
+            }
+        ]
+
+# ================================================================================
 
 def get_license_matrix_contents() -> str:
 
@@ -104,12 +140,9 @@ def get_user_data() -> list[dict]:
 
     return entries
 
+# ================================================================================
 
-# ==================== [ PROMPT GENERATION ] ==================== #
-
-def create_context() -> str:
-
-    template = get_context_template()
+def generate_context() -> str:
 
     license_matrix_contents = get_license_matrix_contents()
 
@@ -117,96 +150,96 @@ def create_context() -> str:
         "license_matrix_file_contents" : license_matrix_contents
     }
 
-    context = template.render(data)
-
-    print(f"Context length (characters): {len(context)}")
+    context = context_template.render(data)
 
     return context
 
-def create_query() -> str:
+def generate_batched_query(license_groups: list[tuple[str]]) -> str:
 
-    data = get_user_data()
+    return batched_query_template.render({
+        "license_groups" : license_groups
+    })
 
-    query = "\n".join([
-        f"The following is a JSON object that contains a list of user IDs and the licenses that they have allocated to them. For each user, concisely answer the following:",
-        f"-> Which licenses have overlapping features?",
-        f"-> Can I get rid of any licenses, why or why not?",
-        f"",
-        f"``` users-and-licenses.json",
-        f"{json.dumps(data)}",
-        f"```",
-        f""
-    ])
+def generate_batched_prompt(license_groups: list[tuple[str]]) -> str:
 
-    print(f"Query length (characters): {len(query)}")
+    return Prompt(
+        context=generate_context(),
+        query=generate_batched_query(license_groups)
+    )
 
-    print(f"[ START QUERY SOURCE ] ------------------------------------------------")
-    print(query)
-    print(f"[ END QUERY SOURCE ] --------------------------------------------------")
+# ================================================================================
 
-    return query
+def dispatch_prompt(client, prompt: Prompt) -> str:
 
-def create_prompt() -> str:
+    print(f"Dispatching prompt [{prompt.id}] ...")
+    print(f"  Context length (characters): {len(prompt.context)}")
+    print(f"  Query length (characters): {len(prompt.query)}")
+    print(f"  Query: ```{prompt.query}```")
 
-    print(f"Creating prompt ...")
+    start_ns = time.time_ns()
 
-    prompt = [
-        {
-            "role": "system",
-            "content": create_context()
-        },
-        {
-            "role": "user",
-            "content": create_query()
-        }
-    ]
+    response = query_azure_openai(client, prompt.as_azure_compatible())
 
-    return prompt
+    end_ns = time.time_ns()
 
+    response = response.to_dict()
+    response_str = response["choices"][0]["message"]["content"]
 
-# ==================== [ PROMPTING ] ==================== #
+    print(f"  Query took {(end_ns - start_ns) // 1000 // 1000}ms.")
+    print(f"  Azure Response ID: {response["id"]}")
+    print(f"  Response: ```{response_str}```")
+    print(f"  Token useage breakdown:")
 
-def run_query(prompt):
+    for k, v in response["usage"].items():
+        print(f"    {k} : {v}")
+
+    return response_str
+
+def main():
+
+    # Read in source data
+
+    user_data_csv = pd.read_csv(DATA_FILE_PATH)
+
+    # Extract users and licenses
+
+    USER_ID_FIELD = "Object Id"
+    LICENSES_FIELD = "Licenses"
+
+    users = dict()
+    for _, row in user_data_csv.iterrows():
+        applied_licenses = row[LICENSES_FIELD].split("+")
+        applied_licenses = list(set(applied_licenses)) # Drop duplicates
+        applied_licenses = tuple(sorted(applied_licenses)) # Make them hashable
+        users[row[USER_ID_FIELD]] = applied_licenses
+
+    unique_license_groupings = list(set(users.values())) # Drop duplicates
+
+    # Check cache
+    # TODO
+
+    # Generate batched prompts based on license sets
+
+    MAX_BATCH_SIZE = 3
+
+    prompts = []
+    for i in range(0, 11, MAX_BATCH_SIZE):
+        prompts.append(generate_batched_prompt(unique_license_groupings[i:i+MAX_BATCH_SIZE]))
+
+    # Dispatch prompts
 
     print(f"Initialising client ...")
 
     client = get_client()
 
-    print(f"Running query ...")
-
-    start_ns = time.time_ns()
-
-    response = query_azure_openai(client, prompt)
-
-    end_ns = time.time_ns()
+    responses = []
+    for prompt in prompts:
+        responses.append(dispatch_prompt(client, prompt))
 
     client.close()
 
-    response = response.to_dict()
-
-    print(f"Query took {(end_ns - start_ns) // 1000 // 1000}ms.")
-    print(f"Response ID: {response["id"]}")
-    print(f"Token useage breakdown:")
-
-    for k, v in response["usage"].items():
-        print(f"  {k} : {v}")
-
-    return response
-
-def main():
-
-    prompt = create_prompt()
-
-    response = run_query(prompt)
-
-    result = response["choices"][0]["message"]["content"]
-
-    print(f"Writing results to '{OUTPUT_FILE_PATH}'.")
-
     with open(OUTPUT_FILE_PATH, 'w') as f:
         f.write(result)
-
-    print(f"Done.")
 
 # ==================== [ RUN ] ==================== #
 
