@@ -1,0 +1,4 @@
+*
+!.gitignore
+!context.jinja
+!license-matrix.csv
