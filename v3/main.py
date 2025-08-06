@@ -1,6 +1,8 @@
 import os
 import time
+import json
 
+import pandas as pd
 from environs import Env
 from openai import AzureOpenAI
 from jinja2 import Template
@@ -19,6 +21,8 @@ from jinja2 import Template
 MODEL_NAME = "gpt-4o" # gpt-4o-2024-11-20
 DEPLOYMENT = "gpt-4o"
 API_VERSION = "2025-01-01-preview"
+
+DATA_FILE_PATH = "./input/data.csv"
 
 CONTEXT_TEMPLATE_FILE_PATH = "./input/context.jinja"
 LICENSE_MATRIX_FILE_PATH = "./input/license-matrix.csv"
@@ -56,6 +60,21 @@ def get_client() -> AzureOpenAI:
         api_version=API_VERSION,
     )
 
+def get_user_data() -> list[dict]:
+
+    print(f"Reading user data from '{DATA_FILE_PATH}'.")
+
+    csv = pd.read_csv(DATA_FILE_PATH)
+
+    entries = []
+    for _, row in csv.iterrows():
+        entries.append({
+            "user" : row["Object Id"],
+            "licenses" : row["Licenses"].split("+")
+        })
+
+    return entries
+
 def create_context() -> str:
 
     print(f"Reading context template from '{CONTEXT_TEMPLATE_FILE_PATH}'.")
@@ -78,7 +97,22 @@ def create_context() -> str:
 
 def create_query() -> str:
 
-    query = "A user has a license for administrative units, conditional access, A3 education and entra ID plan 2. Which licenses have overlapping features? Can I get rid of any licenses, why or why not?"
+    data = get_user_data()
+
+    query = "\n".join([
+        f"The following is a JSON object that contains a list of user IDs and the licenses that they have allocated to them. For each user, concisely answer the following:",
+        f"-> Which licenses have overlapping features?",
+        f"-> Can I get rid of any licenses, why or why not?",
+        f"",
+        f"``` users-and-licenses.json",
+        f"{json.dumps(data)}",
+        f"```",
+        f""
+    ])
+
+    print(f"[ START QUERY ] ------------------------------------------------")
+    print(query)
+    print(f"[ END QUERY ] --------------------------------------------------")
 
     print(f"Query length (characters): {len(query)}")
 
@@ -103,9 +137,9 @@ def create_prompt() -> str:
 
 def run_query(prompt):
 
-    print(f"Running query ...")
-
     client = get_client()
+
+    print(f"Running query ...")
 
     start_ns = time.time_ns()
 
