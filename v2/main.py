@@ -3,7 +3,6 @@ import time
 
 from environs import Env
 from openai import AzureOpenAI
-
 from jinja2 import Template
 
 
@@ -17,7 +16,7 @@ from jinja2 import Template
 
 # ==================== [ CONFIG ] ==================== #
 
-DEPLOYMENT = "gpt-4o"
+DEPLOYMENT = "gpt-4o" # gpt-4o-2024-11-20
 API_VERSION = "2025-01-01-preview"
 
 CONTEXT_TEMPLATE_FILE_PATH = "./input/context.jinja"
@@ -103,9 +102,9 @@ def create_prompt() -> str:
 
 def run_query(prompt):
 
-    client = get_client()
-
     print(f"Running query ...")
+
+    client = get_client()
 
     start_ns = time.time_ns()
 
@@ -123,11 +122,18 @@ def run_query(prompt):
 
     end_ns = time.time_ns()
 
-    print(f"Query took {(end_ns - start_ns) // 1000 // 1000}ms.")
-
     client.close()
 
-    return response.to_dict()
+    response = response.to_dict()
+
+    print(f"Query took {(end_ns - start_ns) // 1000 // 1000}ms.")
+    print(f"Response ID: {response["id"]}")
+    print(f"Token useage breakdown:")
+
+    for k, v in response["usage"].items():
+        print(f"  {k} : {v}")
+
+    return response
 
 def main():
 
@@ -142,6 +148,7 @@ def main():
     with open(OUTPUT_FILE_PATH, 'w') as f:
         f.write(result)
 
+    print(f"Done.")
 
 # ==================== [ RUN ] ==================== #
 
