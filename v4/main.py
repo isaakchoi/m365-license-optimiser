@@ -2,6 +2,7 @@ import os
 import time
 import json
 from typing import Iterable
+from io import StringIO
 
 import pandas as pd
 from environs import Env
@@ -174,7 +175,7 @@ def dispatch_prompt(client, prompt: Prompt) -> str:
     print(f"Dispatching prompt [{prompt.id}] ...")
     print(f"  Context length (characters): {len(prompt.context)}")
     print(f"  Query length (characters): {len(prompt.query)}")
-    print(f"  Query: ```{prompt.query}```")
+    print(f"  Query: '''{prompt.query}'''")
 
     start_ns = time.time_ns()
 
@@ -187,7 +188,7 @@ def dispatch_prompt(client, prompt: Prompt) -> str:
 
     print(f"  Query took {(end_ns - start_ns) // 1000 // 1000}ms.")
     print(f"  Azure Response ID: {response["id"]}")
-    print(f"  Response: ```{response_str}```")
+    print(f"  Response: '''{response_str}'''")
     print(f"  Token useage breakdown:")
 
     for k, v in response["usage"].items():
@@ -220,7 +221,7 @@ def main():
 
     # Generate batched prompts based on license sets
 
-    MAX_BATCH_SIZE = 3
+    MAX_BATCH_SIZE = 50
 
     prompts = []
     for i in range(0, 11, MAX_BATCH_SIZE):
@@ -232,14 +233,56 @@ def main():
 
     client = get_client()
 
-    responses = []
+    def validate_response(response: str) -> bool:
+
+        # Validate can be loaded as a csv
+        try:
+            csv = pd.read_csv(StringIO(response))
+        except pd.errors.ParserError:
+            return False
+
+        # Validate contains all correct columns
+        REQUIRED_COLUMNS = ["all_licenses", "redundant_licenses", "redundant_licenses_justification", "overlapping_licenses", "overlapping_licenses_justification", "unsure", "unsure_justification"]
+        actual_columns = csv.columns.to_list()
+        print(actual_columns)
+        for col in REQUIRED_COLUMNS:
+            if col not in actual_columns:
+                return False
+
+        # Validate contains only correct columns and no duplicated
+        if len(actual_columns) != len(REQUIRED_COLUMNS):
+            return False
+
+        # Passed
+        return True
+
     for prompt in prompts:
-        responses.append(dispatch_prompt(client, prompt))
+
+        response = dispatch_prompt(client, prompt)
+
+        if not validate_response(response):
+            print("INVALID RESPONSE")
+
+        with open('out.csv', 'w') as f:
+            f.write(response)
+
+        # Unpack and validate responses - Resend if fails validation?
+
+        # TODO
 
     client.close()
 
-    with open(OUTPUT_FILE_PATH, 'w') as f:
-        f.write(result)
+    # Aggregate response data
+
+    # TODO
+
+    # Join back on users
+
+    # TODO
+
+    # Format for output
+
+    # TODO
 
 # ==================== [ RUN ] ==================== #
 
