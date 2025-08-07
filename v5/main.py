@@ -96,14 +96,18 @@ class UserData:
         self.licenses = licenses
 
         # Calculated later
-        self.output = None
+        self.overlapping_licenses = None
+        self.overlapping_licenses_justification = None
+        self.overlapping_licenses_resolution = None
 
     def as_dict(self) -> dict:
 
         return {
             "id": self.id,
             "licenses": self.licenses,
-            "output": self.output,
+            "overlapping_licenses": self.overlapping_licenses,
+            "overlapping_licenses_justification": self.overlapping_licenses_justification,
+            "overlapping_licenses_resolution": self.overlapping_licenses_resolution,
         }
 
 def get_license_matrix_contents() -> str:
@@ -186,7 +190,10 @@ https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/structured-outp
 
 class LicenseGroup(BaseModel):
 
-    license_group: list[str] # The set of licenses
+    license_group: list[str] # The license group - Used to join returned data back on the user data objects.
+    overlapping_licenses: list[str] # A list of licenses that provide overlapping features.
+    overlapping_licenses_justification: str # A justification of the choices in overlapping_licenses.
+    overlapping_licenses_resolution: str # Which licenses can be removed, why they can be removed, and any implications of removing them.
 
 class ResponseSchema(BaseModel):
 
@@ -282,8 +289,8 @@ def main():
 
         counts = get_counts((entry.license_group for entry in batch_results))
 
-        failed = set(batch)
-        succeeded = []
+        failed: set[LicenseGroup] = set(batch)
+        succeeded: list[LicenseGroup] = []
 
         for entry in batch_results:
 
@@ -315,7 +322,9 @@ def main():
         for entry in succeeded:
             for user in users.values():
                 if user.licenses == entry.license_group:
-                    user.output = entry.license_group
+                    user.overlapping_licenses = entry.overlapping_licenses
+                    user.overlapping_licenses_justification = entry.overlapping_licenses_justification
+                    user.overlapping_licenses_resolution = entry.overlapping_licenses_resolution
 
     print(f"Closing client ...")
 
