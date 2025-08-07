@@ -244,7 +244,6 @@ def main():
         # Validate contains all correct columns
         REQUIRED_COLUMNS = ["all_licenses", "redundant_licenses", "redundant_licenses_justification", "overlapping_licenses", "overlapping_licenses_justification", "unsure", "unsure_justification"]
         actual_columns = csv.columns.to_list()
-        print(actual_columns)
         for col in REQUIRED_COLUMNS:
             if col not in actual_columns:
                 return False

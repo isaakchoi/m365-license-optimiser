@@ -1,0 +1,5 @@
+*
+!.gitignore
+!context.jinja
+!license-matrix.csv
+!batched-query-template.jinja
