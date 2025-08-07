@@ -74,7 +74,7 @@ def get_client() -> AzureOpenAI:
         api_version=API_VERSION,
     )
 
-def dedupe_and_normalise(strings: Iterable[str]) -> tuple[str]:
+def dedupe_and_normalise(strings: Iterable) -> tuple:
 
     return tuple(sorted(list(set(strings))))
 
@@ -235,22 +235,29 @@ def main():
 
     users = get_user_data()
 
-    distinct_licnese_sets = dedupe_and_normalise([user.licenses for user in users.values()])
-    distinct_licnese_sets = distinct_licnese_sets[:5] # TEMP
+    license_groups = dedupe_and_normalise([user.licenses for user in users.values()])
+
+    print(f"Unique license groups: {len(license_groups)}")
 
     print(f"Checking cache for hits ...")
 
-    # TODO - Only process misses.
+    cache_hit_license_groups = set() # TODO
+    cache_miss_license_groups = set()
+
+    print(f"Cache hits: {len(cache_hit_license_groups)}")
+    print(f"Cache misses: {len(cache_miss_license_groups)}")
 
     print(f"Initialising client ...")
 
     client = get_client()
 
-    for i in range(0, len(distinct_licnese_sets), MAX_BATCH_SIZE):
+    print(f"Processing license groups from cache misses ...")
+
+    for i in range(0, len(license_groups), MAX_BATCH_SIZE):
 
         print(f"Processing batch number '{(i // MAX_BATCH_SIZE) + 1}' ...")
 
-        batch = distinct_licnese_sets[i:i+MAX_BATCH_SIZE]
+        batch = license_groups[i:i+MAX_BATCH_SIZE]
 
         print(f"Batch size: {len(batch)}")
 
