@@ -193,7 +193,7 @@ class LicenseGroup(BaseModel):
     license_group: list[str] # The license group - Used to join returned data back on the user data objects.
     overlapping_licenses: list[str] # A list of licenses that provide overlapping features.
     overlapping_licenses_justification: str # A justification of the choices in overlapping_licenses.
-    overlapping_licenses_resolution: str # Which licenses can be removed, why they can be removed, and any implications of removing them.
+    # overlapping_licenses_resolution: str # Which licenses can be removed, why they can be removed, and any implications of removing them.
 
 class ResponseSchema(BaseModel):
 
@@ -324,7 +324,7 @@ def main():
                 if user.licenses == entry.license_group:
                     user.overlapping_licenses = entry.overlapping_licenses
                     user.overlapping_licenses_justification = entry.overlapping_licenses_justification
-                    user.overlapping_licenses_resolution = entry.overlapping_licenses_resolution
+                    # user.overlapping_licenses_resolution = entry.overlapping_licenses_resolution
 
     print(f"Closing client ...")
 
