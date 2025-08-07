@@ -33,7 +33,7 @@ LICENSE_MATRIX_FILE_PATH = "./input/license-matrix.csv"
 CONTEXT_TEMPLATE_FILE_PATH = "./input/context.jinja"
 BATCHED_QUERY_TEMPLATE_FILE_PATH = "./input/batched-query-template.jinja"
 
-OUTPUT_FILE_PATH = "./output/report.md"
+OUTPUT_FILE_PATH = "./output/results.json"
 
 
 # ==================== [ SETUP ] ==================== #
@@ -55,7 +55,7 @@ subscription_key = env.str("AZURE_OPENAI_API_KEY")
 
 # Preload Jinja templates
 
-print (f" Loading templates ...")
+print (f"Loading templates ...")
 
 with open(BATCHED_QUERY_TEMPLATE_FILE_PATH, "r") as f:
     batched_query_template: Template = Template(f.read())
@@ -63,7 +63,8 @@ with open(BATCHED_QUERY_TEMPLATE_FILE_PATH, "r") as f:
 with open(CONTEXT_TEMPLATE_FILE_PATH, "r") as f:
     context_template: Template = Template(f.read())
 
-# ================================================================================
+
+# ==================== [ UTILITIES ] ==================== #
 
 def get_client() -> AzureOpenAI:
 
@@ -77,7 +78,15 @@ def dedupe_and_normalise(strings: Iterable[str]) -> tuple[str]:
 
     return tuple(sorted(list(set(strings))))
 
-# ================================================================================
+def get_counts(items: Iterable) -> dict:
+
+    counts = dict()
+    for item in items:
+        counts[item] = counts.get(item, 0) + 1
+
+    return counts
+
+# ==================== [ DATA LOADERS ] ==================== #
 
 class UserData:
 
@@ -126,20 +135,12 @@ def get_user_data() -> dict[str, UserData]:
 
     return users
 
-# ================================================================================
+
+# ==================== [ PROMPT GENERATION ] ==================== #
 
 class Prompt:
 
-    def _get_new_id(start=0):
-        while True:
-            yield start
-            start += 1
-
-    _id_gen = _get_new_id()
-
     def __init__(self, context: str, query: str):
-
-        self.id = next(Prompt._id_gen)
 
         self.context = context
         self.query = query
@@ -176,7 +177,8 @@ def generate_batched_prompt(license_groups: list[tuple[str]]) -> Prompt:
         query=generate_batched_query(license_groups)
     )
 
-# ================================================================================
+
+# ==================== [  ] ==================== #
 
 '''
 https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/structured-outputs?tabs=python%2Cdotnet-entra-id&pivots=programming-language-python
@@ -185,7 +187,7 @@ https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/structured-outp
 
 class LicenseGroup(BaseModel):
 
-    license_set: list[str] # The set of licenses
+    license_group: list[str] # The set of licenses
 
 class ResponseSchema(BaseModel):
 
@@ -193,7 +195,6 @@ class ResponseSchema(BaseModel):
 
 def dispatch_prompt(client: Client, prompt: Prompt) -> dict:
 
-    print(f"Dispatching prompt [{prompt.id}] ...")
     print(f"  Context length (characters): {len(prompt.context)}")
     print(f"  Query length (characters): {len(prompt.query)}")
     print(f"  Query: '''{prompt.query}'''")
@@ -233,62 +234,95 @@ def main():
     # Load data
 
     users = get_user_data()
-    unique_license_groupings = dedupe_and_normalise([user.licenses for user in users.values()])
-    unique_license_groupings = unique_license_groupings[:5] # TEMP
 
-    # TODO - Check cache for hits
+    distinct_licnese_sets = dedupe_and_normalise([user.licenses for user in users.values()])
+    distinct_licnese_sets = distinct_licnese_sets[:5] # TEMP
 
-    # Generate batched prompts
+    print(f"Checking cache for hits ...")
 
-    prompts = []
-    for i in range(0, len(unique_license_groupings), MAX_BATCH_SIZE):
-        prompts.append(generate_batched_prompt(unique_license_groupings[i:i+MAX_BATCH_SIZE]))
-
-    # Dispatch prompts
+    # TODO - Only process misses.
 
     print(f"Initialising client ...")
 
     client = get_client()
 
-    for prompt in prompts:
+    for i in range(0, len(distinct_licnese_sets), MAX_BATCH_SIZE):
+
+        print(f"Processing batch number '{(i // MAX_BATCH_SIZE) + 1}' ...")
+
+        batch = distinct_licnese_sets[i:i+MAX_BATCH_SIZE]
+
+        print(f"Batch size: {len(batch)}")
+
+        print (f"Generating prompt ...")
+
+        prompt = generate_batched_prompt(batch)
+
+        print(f"Dispatching prompt ...")
 
         completion = dispatch_prompt(client, prompt)
 
-        # Ensure finish_reason is valid - TODO
-
         result = completion["choices"][0]
+
         finish_reason = result["finish_reason"]
+        if finish_reason != "stop":
+            raise RuntimeError(f"Completion returned with finish reason '{finish_reason}' (expected 'stop'). Some problem likely occurred.")
 
-        # Unpack results
+        print(f"Unpacking results ...")
 
-        batch_output = result["message"]["parsed"]["responses"]
-
-        batch_results = [LicenseGroup.model_validate(entry) for entry in batch_output]
+        batch_results = [LicenseGroup.model_validate(entry) for entry in result["message"]["parsed"]["responses"]]
         for entry in batch_results:
-            entry.license_set = dedupe_and_normalise(entry.license_set)
+            entry.license_group = dedupe_and_normalise(entry.license_group)
 
-        # TODO - Data validation
+        print(f"Validating returned data ...")
 
-        # TODO - Ensure all given license groups were covered in response
+        counts = get_counts((entry.license_group for entry in batch_results))
 
-        # Join back on users
+        failed = set(batch)
+        succeeded = []
 
-        for res in batch_results:
+        for entry in batch_results:
+
+            valid = True
+
+            if entry.license_group not in batch:
+                valid = False
+
+            if counts[entry.license_group] > 1:
+                valid = False # There were multiple entries returned with the same ID. Discard all as something probably went wrong.
+
+            if valid:
+
+                failed.remove(entry.license_group)
+                succeeded.append(entry)
+
+        for license_group in failed:
+
+            print(f"WARNING: License group '{license_group}' failed. Putting up for retry.")
+
+            # TODO - Put invalid entries up for retry. Also needs a retry limit.
+
+        print(f"Updating cache ...")
+
+        # TODO
+
+        print(f"Joining results back on user data ...")
+
+        for entry in succeeded:
             for user in users.values():
-                if user.licenses == res.license_set:
-                    user.output = res.license_set
+                if user.licenses == entry.license_group:
+                    user.output = entry.license_group
+
+    print(f"Closing client ...")
 
     client.close()
 
-    for _, user_data in users.items():
-        print(user_data.as_dict())
-
-    # Format and save
+    print(f"Writing output to '{OUTPUT_FILE_PATH}'.")
 
     output = [user_data.as_dict() for user_data in users.values()]
 
     with open(OUTPUT_FILE_PATH, 'w') as f:
-        json.dump(output, f)
+        f.write(json.dumps(output))
 
 
 # ==================== [ RUN ] ==================== #
