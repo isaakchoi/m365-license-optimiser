@@ -1,0 +1,18 @@
+Below is a list of multiple different sets of Microsoft 365 licenses that have been applied to users.
+
+``` Microsft 365 License Sets
+{% for group in license_groups %} -> {{ group | join(', ') }}
+{% endfor -%}
+```
+
+Your task is to answer the following questions for each set of licenses as accurately as you can. Strictly output your answer only as a CSV such that it can be directly used by other tools.
+
+Many licenses have similar names but serve different purposes so be sure to think about the specific context of each license before giving your answer. Use your own knowledge and intuition.
+
+1. Provide a list of all the licenses that this row is for. Use '+' to delimit elements instead of commas. Name this column "all_licenses".
+2. List all redundant licenses that can be removed without losing any features. Use '+' to delimit elements instead of commas. Name this column "redundant_licenses".
+3. Give a brief justification of your answer in the "redundant_licenses" column. Name this column "redundant_licenses_justification".
+4. List all licenses that have overlapping features. Use '+' to delimit elements instead of commas. Name this column "overlapping_licenses".
+5. Give a brief justification of your answer in the "overlapping_licenses" column. Name this column "overlapping_licenses_justification".
+6. List all licenses that you are unsure about or for which you are not confident in your answer. Use '+' to delimit elements instead of commas. Name this column "unsure".
+7. Give a brief justification of your answer in the "unsure" column. Name this column "unsure_justification".

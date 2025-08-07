@@ -32,7 +32,7 @@ LICENSE_MATRIX_FILE_PATH = "./input/license-matrix.csv"
 OUTPUT_FILE_PATH = "./output/report.md"
 
 
-BATCHED_QUERY_TEMPLATE_FILE_PATH = "./input/batched_query_template.jinja"
+BATCHED_QUERY_TEMPLATE_FILE_PATH = "./input/batched-query-template.jinja"
 
 
 # ==================== [ SETUP ] ==================== #
