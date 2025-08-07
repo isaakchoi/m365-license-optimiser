@@ -1,10 +1,10 @@
 Below is a list of multiple different groups of Microsoft 365 licenses that have been applied to users.
 
 ``` Microsft 365 License Groups
-{% for group in license_groups %} -> {{ group | join(', ') }}
+{% for group in license_groups %} - {{ group | join(', ') }}
 {% endfor -%}
 ```
 
-For each group of licenses, answer the following questions as accurately as you can. Think deeply about your answer, considering your knowledge of what features each license has and how they relate to other licenses. Strictly output your answer as valid JSON.
+For each group of licenses, create a new object in the 'responses' array by answering the following questions as accurately as you can. Think deeply about your answer, considering your knowledge of what features each license has and how they relate to other licenses. Strictly output your answer as valid JSON.
 
-1. For each license set, return a list of all licenses in each license set.
+1. Populate the 'license_group' field with a list of all licenses in the license group currently being considered.

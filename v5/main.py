@@ -230,18 +230,16 @@ def dispatch_prompt(client: Client, prompt: Prompt) -> dict:
 
 def main():
 
-    # Load data
-
     users = get_user_data()
 
-    license_groups = dedupe_and_normalise([user.licenses for user in users.values()])
+    license_groups = dedupe_and_normalise([user.licenses for user in users.values() if len(user.licenses) > 1]) # Keep only unique license groups of size > 1
 
-    print(f"Unique license groups: {len(license_groups)}")
+    print(f"Unique license groups being considered: {len(license_groups)}")
 
     print(f"Checking cache for hits ...")
 
     cache_hit_license_groups = set() # TODO
-    cache_miss_license_groups = set()
+    cache_miss_license_groups = license_groups # TODO
 
     print(f"Cache hits: {len(cache_hit_license_groups)}")
     print(f"Cache misses: {len(cache_miss_license_groups)}")
@@ -252,11 +250,11 @@ def main():
 
     print(f"Processing license groups from cache misses ...")
 
-    for i in range(0, len(license_groups), MAX_BATCH_SIZE):
+    for i in range(0, len(cache_miss_license_groups), MAX_BATCH_SIZE):
 
         print(f"Processing batch number '{(i // MAX_BATCH_SIZE) + 1}' ...")
 
-        batch = license_groups[i:i+MAX_BATCH_SIZE]
+        batch = cache_miss_license_groups[i:i+MAX_BATCH_SIZE]
 
         print(f"Batch size: {len(batch)}")
 
