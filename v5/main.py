@@ -23,14 +23,13 @@ from jinja2 import Template
 
 MAX_BATCH_SIZE = 50
 
-MODEL_NAME = "gpt-4o" # gpt-4o-2024-11-20
-DEPLOYMENT = "gpt-4o"
+DEPLOYMENT = "gpt-4o" # gpt-4o-2024-11-20
 API_VERSION = "2025-01-01-preview"
 
 USER_DATA_FILE_PATH = "./input/data.csv"
 LICENSE_MATRIX_FILE_PATH = "./input/license-matrix.csv"
 
-CONTEXT_TEMPLATE_FILE_PATH = "./input/context.jinja"
+CONTEXT_TEMPLATE_FILE_PATH = "./input/context-template.jinja"
 BATCHED_QUERY_TEMPLATE_FILE_PATH = "./input/batched-query-template.jinja"
 
 OUTPUT_FILE_PATH = "./output/results.json"

@@ -1,5 +1,9 @@
 *
+
 !.gitignore
-!context.jinja
+
 !license-matrix.csv
+
+# Templates
+!context-template.jinja
 !batched-query-template.jinja
