@@ -239,6 +239,8 @@ def main():
 
     users = get_user_data()
 
+    # users = {k : v for i, (k, v) in enumerate(users.items()) if i < 5}
+
     license_groups = dedupe_and_normalise([user.licenses for user in users.values() if len(user.licenses) > 1]) # Keep only unique license groups of size > 1
 
     print(f"Unique license groups being considered: {len(license_groups)}")
@@ -336,6 +338,8 @@ def main():
 
     with open(OUTPUT_FILE_PATH, 'w') as f:
         f.write(json.dumps(output))
+
+    print(f"Done.")
 
 
 # ==================== [ RUN ] ==================== #

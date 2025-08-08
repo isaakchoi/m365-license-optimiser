@@ -1,12 +1,15 @@
 Below is a list of multiple different groups of Microsoft 365 licenses that have been applied to users.
 
+For each group of licenses, create a new object in the 'responses' array by doing the following:
+- Populate the 'license_group' field with a list of all licenses in the license group currently being considered.
+- Populate the 'overlapping_licenses' field with a list of the licenses from the license group that provide overlapping tools. Only include answers that you are sure about.
+- Provide a detailed justification of your choices.
+
+Think deeply about each answer, considering your knowledge of what tools each license provides and whether other licenses also provide the exact same tools.
+
 ``` Microsft 365 License Groups
 {% for group in license_groups %} - {{ group | join(', ') }}
 {% endfor -%}
 ```
 
-For each group of licenses, create a new object in the 'responses' array so that it aligns with the given schema. Think deeply about your answer, considering your knowledge of what features each license has and how they relate to other licenses. Strictly output your answer as valid JSON.
-
-Follow the following instructions when populating each object:
-1. Populate the 'license_group' field with a list of all licenses in the license group currently being considered.
-2. Populate the 'overlapping_licenses' field with a list of all licenses in the license group that provide overlapping features. Provide a justification of your choices in the 'overlapping_licenses_justification' field.
+Output your answer as valid JSON.
